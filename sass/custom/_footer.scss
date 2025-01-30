@@ -1,14 +1,21 @@
 footer {
     background-color: black;
+    width: 100%;
+    padding: 15px 0px;
+
+    @media (max-width: 768px) {
+        padding: 10px 0px;
+    }
 
     .footer-content {
         width: 90%;
         display: flex;
         justify-content: end;
         align-items: center;
-        padding: 4px 0;
+        // padding: 20px 0;
         color: #fff;
         justify-items: center;
+        margin-top: auto;
 
         @media(max-width: 768px) {
             justify-content: center;

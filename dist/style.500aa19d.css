@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  min-height: 100vh;
   font-family: "Space Grotesk";
 }
 
@@ -48,7 +49,7 @@ header .main-nav .nav-links {
     align-items: center;
     background-color: black;
     transition: 0.9s ease;
-    gap: 30px;
+    gap: 40px;
     box-sizing: border-box;
     z-index: 10;
   }
@@ -163,6 +164,11 @@ header .main-nav .nav-menu.active {
   color: white;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  .main-container .welcome-message p {
+    font-size: 20px;
+  }
+}
 .main-container .welcome-message .labs-button {
   background: transparent;
   color: #fff;
@@ -204,6 +210,11 @@ header .main-nav .nav-menu.active {
   object-fit: cover;
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .main-container .projects .project-card img {
+    width: 80%;
+  }
+}
 .main-container .projects .project-card .project-info {
   position: absolute;
   bottom: 10px;
@@ -230,15 +241,22 @@ header .main-nav .nav-menu.active {
 
 footer {
   background-color: black;
+  width: 100%;
+  padding: 15px 0px;
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 10px 0px;
+  }
 }
 footer .footer-content {
   width: 90%;
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 4px 0;
   color: #fff;
   justify-items: center;
+  margin-top: auto;
 }
 @media (max-width: 768px) {
   footer .footer-content {
