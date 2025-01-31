@@ -163,6 +163,11 @@ header .main-nav .nav-menu.active {
   margin-bottom: 20px;
   color: white;
 }
+@media (max-width: 768px) {
+  .main-content .main-container .welcome-message h1 {
+    margin-bottom: 10px;
+  }
+}
 .main-content .main-container .welcome-message p {
   font-size: 24px;
   color: white;
