@@ -1,0 +1,110 @@
+header {
+    background-color: black;
+    padding: 2px 0px;
+
+    .main-nav {
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.9s ease;
+        width: 100%;
+        box-sizing: border-box;
+
+        .logo img{
+            width: 100%;
+            max-width: 100px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            padding-right: 10px;
+            list-style: none;
+            font-size: 16px;
+
+            @media (max-width: 768px) {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                transition: 0.9s ease;
+                gap: 40px;
+                box-sizing: border-box;
+                z-index: 10;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 24px;
+
+                @media (max-width: 768px) {
+                    padding: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            a:hover {
+                color: lightblue;
+                transition: 0.3s ease;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        
+        }
+
+        /* Add this rule to ensure the nav-links are displayed when active */
+        .nav-links.active {
+            display: flex;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            background: none;
+            z-index: 1000;
+
+            @media (max-width: 768px) {
+                display: flex;
+            }
+    
+            .bar {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin: 4px 0;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-14px) rotate(-45deg) 
+        }
+        
+        .nav-menu.active {
+            left: 0;
+        }   
+    }
+}
