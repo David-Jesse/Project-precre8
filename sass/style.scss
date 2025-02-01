@@ -1,6 +1,21 @@
-@import "./custom/base";
+@import "./base";
 @import "./custom/mixins";
 @import "./custom/nav";
 @import './custom/layout';
 @import './custom/body';
 @import './custom/footer';
+@import './about/aboutnav';
+@import './about/abouthero';
+@import './about/aboutmain';
+@import './about/aboutfooter';
+
+@keyframes slideIn {
+    0% {
+        transfrom: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
