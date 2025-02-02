@@ -73,9 +73,14 @@ $hightlight-color: #f0f0f0;
                 animation: slideUp 0.5s ease forwards;
 
               &.circular-design {
-                background-color: black;
-                color: white;
+                background-color: transparent;
+                color: black;
                 animation-delay: 0.3s;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
               }
 
               &.inclusive-business {
