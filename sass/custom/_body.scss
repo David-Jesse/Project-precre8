@@ -39,7 +39,7 @@
             }
     
             h1 {
-                font-size: 50px;
+                font-size: 5rem;
                 margin-bottom: 20px;
                 color: white;
 
@@ -111,7 +111,7 @@
                     bottom: 10px;
                     left: 10px;
                     color: #fff;
-                    font-size: 20px;
+                    // font-size: 20px;
                     padding: 5px 10px;
                     border-radius: 5px;
                     display: flex;
@@ -124,13 +124,15 @@
                     p {
                         color: #fff;
                         margin-bottom: 0px;
-                        font-size: 30px;
+                        font-size: 20px;
                     }
 
                     a {
                         margin-top: 0px;
                         color: white;
                         text-decoration: none;
+                        font-size: 30px;
+                        font-weight: 500;
 
                         &:hover {
                             color: lightblue;
