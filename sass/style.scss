@@ -8,10 +8,37 @@
 @import './about/abouthero';
 @import './about/aboutmain';
 @import './about/aboutfooter';
+@import './labs/labsnav';
+@import './labs/labshero';
+@import './labs/labsmain';
+@import './labs/labsfooter';
+
 
 @keyframes slideIn {
     0% {
         transfrom: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
         opacity: 0;
     }
     100% {
