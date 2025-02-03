@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 body, html {
   padding: 0;
   margin: 0;
@@ -870,6 +871,87 @@ footer .footer-content h6 {
   color: #fff;
   font-weight: 700;
   font-size: 16px;
+}
+
+.content {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 2em;
+}
+.content .contact-title {
+  font-size: 5rem;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 3rem;
+  animation: slideIn 1s ease-out forwards;
+}
+@media (max-width: 768px) {
+  .content .contact-title {
+    width: 100%;
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+}
+.content .contact-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: scaleIn 0.8s ease-out 0.5s forwards;
+}
+@media (max-width: 768px) {
+  .content .contact-title::after {
+    width: 100%;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.contact-content {
+  width: 100%;
+}
+.contact-content .contact-map {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.contact-content .contact-map iframe {
+  width: 100%;
+  height: 400px;
+}
+@media (max-width: 768px) {
+  .contact-content .contact-map iframe {
+    height: 300px;
+  }
+}
+.contact-content p {
+  font-size: 20px;
+  align-items: center;
+  line-height: 1.5;
+  animation: slideInFromBottom 1s ease-out;
+  padding-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .contact-content p {
+    font-size: 18px;
+  }
+}
+.contact-content p a {
+  color: #c36;
+  text-decoration: underline;
+}
+.contact-content p a:hover {
+  color: black;
 }
 
 @keyframes slideIn {
