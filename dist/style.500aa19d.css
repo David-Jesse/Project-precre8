@@ -160,7 +160,7 @@ header .main-nav .nav-menu.active {
   }
 }
 .main-content .main-container .welcome-message h1 {
-  font-size: 50px;
+  font-size: 5rem;
   margin-bottom: 20px;
   color: white;
 }
@@ -170,7 +170,7 @@ header .main-nav .nav-menu.active {
   }
 }
 .main-content .main-container .welcome-message p {
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   font-weight: 400;
 }
@@ -277,7 +277,7 @@ footer .footer-content {
 }
 footer .footer-content h6 {
   color: #fff;
-  font-weight: 700;
+  font-weight: 100;
   font-size: 16px;
 }
 
@@ -490,9 +490,9 @@ header .main-nav .nav-menu.active {
 }
 .about-content .our-methods .buttons .btn {
   border: none;
-  padding: 20px 30px;
+  padding: 15px 20px;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.4em;
   white-space: nowrap;
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -500,9 +500,13 @@ header .main-nav .nav-menu.active {
   animation: slideUp 0.5s ease forwards;
 }
 .about-content .our-methods .buttons .btn.circular-design {
+  background-color: transparent;
+  color: black;
+  animation-delay: 0.3s;
+}
+.about-content .our-methods .buttons .btn.circular-design:hover {
   background-color: black;
   color: white;
-  animation-delay: 0.3s;
 }
 .about-content .our-methods .buttons .btn.inclusive-business {
   background-color: transparent;
@@ -585,7 +589,7 @@ footer .footer-content {
 }
 footer .footer-content h6 {
   color: #fff;
-  font-weight: 700;
+  font-weight: 100;
   font-size: 16px;
 }
 
@@ -739,15 +743,18 @@ header .main-nav .nav-menu.active {
 .labs-content {
   width: 100%;
 }
+
 .labs-content .programs h2 {
+
   font-size: 30px;
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
-  .labs-content .programs h2 {
-    font-size: 28px;
+  .labs-content .lab-programs h2 {
+    font-size: 25px;
+    text-align: center;
   }
-}
+  
 .labs-content .programs p {
   font-size: 20px;
   margin-bottom: 10px;
@@ -760,7 +767,7 @@ header .main-nav .nav-menu.active {
     text-align: justify;
     font-size: 18px;
   }
-}
+
 .labs-content .projects {
   display: flex;
   width: 80%;
@@ -872,6 +879,7 @@ footer .footer-content h6 {
   font-size: 16px;
 }
 
+
 @keyframes slideIn {
   0% {
     transfrom: translateX(-100%);
@@ -882,16 +890,6 @@ footer .footer-content h6 {
     opacity: 1;
   }
 }
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -899,6 +897,15 @@ footer .footer-content h6 {
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
