@@ -766,7 +766,6 @@ header .main-nav .nav-menu.active {
 @media (max-width: 768px) {
   .labs-content .programs h2 {
     font-size: 25px;
-    text-align: center;
   }
 }
 .labs-content .programs p {
