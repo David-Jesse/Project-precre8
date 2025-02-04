@@ -21,9 +21,10 @@
     }
     100% {
         transform: translateX(0);
-        opacity: 1;
-    }
+            opacity: 1;
+        }
 }
+
 
 @keyframes slideInFromLeft {
     0% {
@@ -32,6 +33,9 @@
     }
     100% {
         transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 @keyframes slideInFromBottom {
     0% {
@@ -43,4 +47,3 @@
         opacity: 1;
     }
 }
-
