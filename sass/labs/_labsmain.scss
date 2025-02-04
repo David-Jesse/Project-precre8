@@ -1,7 +1,6 @@
 .labs-content {
     width: 100%;
-
-    .lab-programs {
+    .programs {
         h2 {
             font-size: 30px;
             margin-bottom: 10px;
@@ -22,7 +21,6 @@
                 width: 100%;
                 text-align: justify;
                 font-size: 18px;
-
             }
         }
     }
@@ -47,7 +45,11 @@
             @media (max-width: 768px) {
                 text-align: center
             }
-
+    
+        @media (max-width: 768px) {
+            flex-direction: column;
+            width: 100%;
+        }
             .btn {
                 border: none;
                 padding: 20px 40px;
@@ -56,14 +58,13 @@
                 transform: translateY(50px);
                 animation: slideUp 0.5s ease forwards;
                 cursor: pointer;
-
-                @media(max-width: 768px) {
+    
+                @media (max-width: 768px) {
                     padding: 15px 30px;
                     transform: none;
                     width: 100%;
                     margin-bottom: 20px;
                 }
-
                 a {
                     background-color: black;
                     color: white;
@@ -72,7 +73,7 @@
                     @media(max-width: 768px) {
                         font-size: 20px;
                     }
-
+    
                     &:hover {
                         color: lightblue;
                     }
@@ -100,10 +101,10 @@
                 margin-top: 10px;
                 text-align: center;
                 width: 100%;  
-
+    
                 a {
                     color: black;
-
+                  
                     &:hover {
                         color: lightblue;
                     }
@@ -112,3 +113,4 @@
         }
     }
 }
+
