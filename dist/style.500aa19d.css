@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 body, html {
   padding: 0;
   margin: 0;
@@ -745,7 +746,6 @@ header .main-nav .nav-menu.active {
 @media (max-width: 768px) {
   .labs-content .programs h2 {
     font-size: 28px;
-    text-align: center;
   }
 }
 .labs-content .programs p {
@@ -868,7 +868,7 @@ footer .footer-content {
 }
 footer .footer-content h6 {
   color: #fff;
-  font-weight: 700;
+  font-weight: 100;
   font-size: 16px;
 }
 
